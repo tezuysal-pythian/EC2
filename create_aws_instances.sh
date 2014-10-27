@@ -34,6 +34,9 @@ while getopts "f:nlr:" o; do
         r)
             aws_region=${OPTARG}
             ;;
+        h)
+            usage
+            ;;
         *)
             usage
             ;;
